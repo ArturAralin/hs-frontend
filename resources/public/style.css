@@ -8,27 +8,92 @@
   --color-pink: rgba(241, 50, 50, 1);
 }
 
+body {
+  text-align: left;
+}
+
 #root {
-  margin: 0;
-  height: 100vh;
-  /* display: flex; */
-  font-family: Arial;
-  align-items: center;
+  /* margin: 0; */
+  display: flex;
+  /* /* font-family: Arial; */
+  /* align-items: center; */
   justify-content: center;
 }
 
-.site__title {
-  font-size: 100px;
-  /* width: 50%; */
-  text-align: center;
+.container {
+  width: 80%;
 }
 
-.site__title-text {
-  background: -webkit-linear-gradient(
-    34deg,
-    var(--color-purple),
-    var(--color-pink)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.patients {
+  text-align: left;
+  /* width: 50%; */
+}
+
+.column {
+  display: inline-block;
+  padding: 0.25em;
+}
+
+.column input {
+  width: 100%;
+  height: 2em;
+}
+
+.column .edit_controls {
+  position: absolute;
+}
+
+.column button {
+  padding: 0.5em 0.5em;
+  cursor: pointer;
+}
+
+.id {
+  width: 4em;
+}
+
+.fio {
+  width: 20em;
+}
+
+.gender {
+  width: 10em;
+}
+
+.birthday {
+  width: 10em;
+}
+
+/* .pagination {} */
+
+.pagination a {
+  margin: 0.25em;
+  cursor: pointer;
+}
+
+.pagination a.current {
+  text-decoration: underline;
+}
+
+.form {
+  width: 40%;
+}
+
+.form .controls button {
+  width: 100%;
+  height: 2em;
+}
+
+.form_field {
+  padding: 0.25em;
+}
+
+.form_field label {
+  display: inline-block;
+  width: 5em;
+}
+
+.form_field input {
+  font-size: 16px;
+  width: 70%;
 }
